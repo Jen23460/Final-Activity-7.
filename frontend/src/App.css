@@ -1,0 +1,81 @@
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* dark overlay */
+    url('https://www.shutterstock.com/shutterstock/videos/1027427153/thumb/1.jpg?ip=x480') no-repeat center center fixed;
+  background-size: cover;
+  overflow-x: auto;
+  color: #ffffff; /* Light text for better contrast */
+}
+
+/* Make any .text-center element white */
+.text-center {
+  color: #ffffff;
+}
+
+/* App container with large width */
+.app-container {
+  width: 300vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Section styling */
+.section {
+  width: 100vw;
+  height: 85vh;
+  background: linear-gradient(135deg, rgba(224, 247, 250, 0.95), rgba(225, 190, 231, 0.95)); /* semi-transparent pastel */
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.section:hover {
+  transform: scale(1.02);
+}
+
+/* Section heading */
+.section h2 {
+  font-size: 2.5rem;
+  color: #ffffff; /* Changed to white */
+  margin-bottom: 1rem;
+}
+
+/* Section content */
+.section p {
+  font-size: 1.1rem;
+  color: #ffffff; /* Changed to white */
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Optional button style */
+.btn {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #0a0217;
+  color: #e0e0e0;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(126, 87, 194, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #5e35b1;
+}
